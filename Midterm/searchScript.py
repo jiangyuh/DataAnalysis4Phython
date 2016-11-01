@@ -43,7 +43,7 @@ def findcountBytag(dat):
         d["c++"] = cpp
         d["c#"] = cs
         d["java"] = java
-        d["c"] = java
+        d["c"] = c
     except:
         print("findcountBytag"+dat)
     return d
@@ -168,8 +168,8 @@ if args.t=="java" or args.t=="c" or args.t=="c++" or args.t=="c#" or args.t=='py
 
 #Q3
     if args.q3:
-       for page in range(1, 101):
-           q3 = "https://api.stackexchange.com/2.2/users?page={0}&pagesize=100&fromdate=1443657600&todate=1475280000&order=desc&sort=reputation&site=stackoverflow&key=dMz8TcQs1lHxFbvPo5p8*w((".format(page)
+       for page in range(1, 6):
+           q3 = "https://api.stackexchange.com/2.2/users?page={0}&pagesize=20&fromdate=1443657600&todate=1475280000&order=desc&sort=reputation&site=stackoverflow&key=dMz8TcQs1lHxFbvPo5p8*w((".format(page)
            dataq3 = requests.get(q3)
            dq3 = rateBybadge(dataq3.text)
            file_exists(args.t + "/Q3/")

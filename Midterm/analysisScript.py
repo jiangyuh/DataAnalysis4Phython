@@ -8,6 +8,7 @@ import matplotlib.mlab as mlab
 import numpy as np
 import argparse
 import datetime
+import csv
 
 def file_exists(foldername):
     if not os.path.exists(foldername):
@@ -109,6 +110,54 @@ if args.t:
       plt.cla()
       html.write("</table><br/><br/><h3>Question 5:During last month, what is the proportion between the accpeted_answers and unaccpted-ones</h3>")
       html.write("<img src='PieChart.png'/><br/><br/></div></body></html>")
+
+
+
+#output for csv file
+      with open(dt+"/result.csv", 'w') as f:
+          w = csv.writer(f)
+          w.writerow(["Question 1:During last month, among Python, Java, C++, C#, which tag gets the most questions?"])
+          for (key, value) in sumq1.items():
+              lis = []
+              lis.append(key)
+              lis.append(value)
+              w.writerow(lis)
+          w.writerow(["Question 2:During last month, Which type of badge do the users get who always mentioned python, show top 10?"])
+          i=1
+          for txt in badgeSort:
+              if(i<=10):
+                   lis = []
+                   lis.append(i)
+                   lis.append(txt)
+                   w.writerow(lis)
+                   i=i+1
+          
+          w.writerow(["Question 3: In the last year(2015-10-01~2016-10-01), who has the most valuable badge, show top 10?"])
+          j=1
+          for item in dsort:
+              if (j<=10):
+                    lis = []
+                    lis.append(j)
+                    lis.append(item)
+                    w.writerow(lis)
+                    j=j+1
+          
+          w.writerow(["Question4:During last month, in the questions users frequently asked, show the top 10 ones which get the most answers"])
+          k = 1
+          for cont in questionSort:
+              if (k<=10):
+                   lis = []
+                   lis.append(k)
+                   lis.append(cont)
+                   w.writerow(lis)
+                   k =k + 1
+          w.writerow(["Question 5:During last month, what is the proportion between the accpeted_answers and unaccpted-ones?"])
+          for (key, value) in d.items():
+              lis = []
+              lis.append(key)
+              lis.append(value)
+              w.writerow(lis)
+
       print("end")
 else:
     print("No Argument Input.")

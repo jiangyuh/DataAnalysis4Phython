@@ -1,0 +1,42 @@
+"Question 1:During last month, among Python, Java, C++, C#, which tag gets the most questions?"
+python,0
+c#,506
+c,79
+java,749
+c++,228
+"Question 2:During last month, Which type of badge do the users get who always mentioned python, show top 10?"
+1,"('Editor', 684)"
+2,"('Student', 681)"
+3,"('Scholar', 666)"
+4,"('Supporter', 502)"
+5,"('Commentator', 472)"
+6,"('Tumbleweed', 407)"
+7,"('Informed', 336)"
+8,"('Teacher', 309)"
+9,"('Custodian', 284)"
+10,"('Popular Question', 253)"
+"Question 3: In the last year(2015-10-01~2016-10-01), who has the most valuable badge, show top 10?"
+1,"('Aleksej', 11.100000000000001)"
+2,"('eisbehr', 10.8)"
+3,"('dga', 10.3)"
+4,"('Tadhg McDonald-Jensen', 10.200000000000001)"
+5,"('kukkuz', 8.9)"
+6,"('Abdelhak', 8.6)"
+7,"('Muhammad Usman', 8.5)"
+8,"('georgeawg', 8.5)"
+9,"('Sotos', 8.100000000000001)"
+10,"('Margaret Bloom', 7.0)"
+"Question4:During last month, in the questions users frequently asked, show the top 10 ones which get the most answers"
+1,"('Hidden features of Python', 191)"
+2,"('How do you split a list into evenly sized chunks?', 45)"
+3,"('Calling an external command in Python', 43)"
+4,"('How can I represent an &#39;Enum&#39; in Python?', 43)"
+5,"('Finding local IP addresses using Python&#39;s stdlib', 37)"
+6,"('How to merge two Python dictionaries in a single expression?', 37)"
+7,"('How do I check whether a file exists using Python?', 37)"
+8,"('error: Unable to find vcvarsall.bat', 36)"
+9,"('Print in terminal with colors using Python?', 35)"
+10,"('Sort a Python dictionary by value', 35)"
+"Question 5:During last month, what is the proportion between the accpeted_answers and unaccpted-ones?"
+unaccepted,42.63
+accepted,57.37
