@@ -31,14 +31,18 @@ dt = datetime.datetime.now().strftime("%Y%m%d-%H")
 #read the number of business
 all_df=[]
 total_dic={}
-for file_name in glob.glob('data/businessCount/'+args.d+'/'+args.l+'*.json'):
-    with open(file_name) as f:
-        jsn = json.load(f)
-        df=pd.DataFrame([])
-        df["City"]=jsn.keys()
-        df["Total_Business"]=jsn.values()
-        all_df.append(df)
+clist=args.l
+
+for c in clist:
+    for file_name in glob.glob('data/businessCount/' + args.d + '/' + c + '_*.json'):
+        with open(file_name) as f:
+            jsn = json.load(f)
+            df = pd.DataFrame([])
+            df["City"] = jsn.keys()
+            df["Total_Business"] = jsn.values()
+            all_df.append(df)
 city_df = pd.concat(all_df)
+
 
 df=pd.merge(city_df, income_df, how='inner', on=None, left_on=None, right_on=None,
       left_index=False, right_index=False, sort=True, copy=True, indicator=False)
@@ -56,6 +60,7 @@ plt.xlabel('City Name')
 plt.title("Relationship Between Household Income and Business Count")
 file_exists("output/"+dt+"/analysis_5/")
 plt.savefig("output/"+dt+"/analysis_5/analysis_5.png")
+plt.clf()
 
 #create dashborad
 html = open("output/"+dt+"/analysis_5/analysis_5.html", 'w')

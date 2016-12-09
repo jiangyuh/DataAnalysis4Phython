@@ -2,7 +2,6 @@ import os
 import glob
 import json
 import matplotlib.pyplot as plt
-import matplotlib.mlab as mlab
 import argparse
 import datetime
 import pandas as pd
