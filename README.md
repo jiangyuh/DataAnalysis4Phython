@@ -29,7 +29,7 @@ All results will show in different figures and html files.
 
 (Run all python )
 
-###Step_1. Collect Data
+##Step_1. Collect Data
 
 ######Code Example:
 
@@ -90,7 +90,7 @@ All data will be colleced, selected and stored like the picture below:
 
 ps. The user could enter one or a few of these arguments
 
-###Step_2. Perform Analysis and Display the result 
+##Step_2. Perform Analysis and Display the result 
 
 (All the analysis results contain dashboards)
 [Link For HTML Files](https://github.com/jiangyuh/DataAnalysis4Phython/tree/master/FinalProject/output/20161208-17)
@@ -98,7 +98,8 @@ ps. The user could enter one or a few of these arguments
 Method to create dashboard:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a2.png)
 
-####Analysis One [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_1.py)
+###Analysis One [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_1.py)
+************************************************************************************
 
 ######Code Example:
 
@@ -121,7 +122,8 @@ Get data from stored data and merge items with the same key:
 analysis_1.png
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_1/analysis_1.png)
 
-#####Analysis Two [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_2.py)
+###Analysis Two [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_2.py)
+************************************************************************************
 
 Two arguments: -d Input the date want to perform  -c Input the category want to perform
 
@@ -140,7 +142,8 @@ Get data from stored data and calculate the number of different price range:
 analysis_2.png
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_2/analysis_2.png)
 
-#####Analysis Three [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_3.py)
+###Analysis Three [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_3.py)
+************************************************************************************
 
 Two arguments: -d Input the date want to perform  -c Input the day want to perform 
 
@@ -158,7 +161,8 @@ analysis_3.png
 Show the open time, close time and opening hours in a specific day in one week
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_3/analysis_3.png)
 
-#####Analysis Four [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_4.py)
+###Analysis Four [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_4.py)
+************************************************************************************
 
 Two arguments: -d Input the date want to perform  -l Input some categories want to perform 
 
@@ -179,7 +183,8 @@ analysis_4.png
 Show the percentage of categories with the same price range
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_4/analysis_4.png)
 
-#####Analysis Five [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_5.py)
+###Analysis Five [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_5.py)
+************************************************************************************
 
 Two arguments: -d Input the date want to perform  -l Input some cities want to perform 
 
