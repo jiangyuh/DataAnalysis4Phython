@@ -27,18 +27,16 @@ All results will show in different figures and html files.
 ##How to use the python files
 [collect_data.py  Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/collect_data.py)
 
-(Run all python )
 
 ##Step_1. Collect Data
 
 ######Code Example:
 
-Arguments:
-![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/c2.png)
-
 The collect_data.py collect and select all data for all analysis.
 
 ######*For Analysis_1: Collect data from yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json, sort and get top 5 popular restaurants' business_id, and then use the ids to search in  yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_review.json and get the number of reviews with different stars.
+
+Code Example:
 
 Find top 5 restaurants and get business_ids:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/c1.png)
@@ -50,6 +48,8 @@ Find top 5 restaurants and get business_ids:
 ######*For Analysis_4: Collect data from yelp_dataset_challenge_academic_dataset/yelp_academic_dataset_business.json get the percentage of various categories.(the user can specify a list of categories)
 
 ######*For Analysis_5: Collect data from yelp api collect data of total number of businesses.(the user can specify day,like Friday)
+
+Code Example:
 
 Use Yelp API get data of cities
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/c3.png)
@@ -73,6 +73,7 @@ _5. -l:Some Cities for Analysis_5 (The default are San Francisco, Dallas, Buffal
 ```bash
 $ python collect_data.py -t Restaurants -c Restaurants -d Friday -p 3 -l Chicago Buffalo Orlando
 ```
+ps. The user could enter one or a few of these arguments
 
 All data will be colleced, selected and stored like the picture below:
 
@@ -88,12 +89,12 @@ All data will be colleced, selected and stored like the picture below:
 
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/data_structure.png)
 
-ps. The user could enter one or a few of these arguments
-
 ##Step_2. Perform Analysis and Display the result 
 
 (All the analysis results contain dashboards)
 [Link For HTML Files](https://github.com/jiangyuh/DataAnalysis4Phython/tree/master/FinalProject/output/20161208-17)
+
+Code Example:
 
 Method to create dashboard:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a2.png)
@@ -113,7 +114,7 @@ The user could enter the date, the category they want to search or enter nothing
 $ python analysis_1.py 
 $ python analysis_1.py -d 20161208
 ```
-Code: 
+Code Example: 
 Get data from stored data and merge items with the same key:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a1.png)
 
@@ -121,6 +122,8 @@ Get data from stored data and merge items with the same key:
 
 analysis_1.png
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_1/analysis_1.png)
+
+The bars with different colors shows the number of reviews with different stars.
 
 ###Analysis Two [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_2.py)
 ************************************************************************************
@@ -133,7 +136,9 @@ The user could enter the date, the category they want to search or enter nothing
 $ python analysis_2.py 
 $ python analysis_2.py  -d 20161208 -c Restaurants
 ```
-Code: 
+
+Code Example:
+
 Get data from stored data and calculate the number of different price range:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a3.png)
 
@@ -141,6 +146,8 @@ Get data from stored data and calculate the number of different price range:
 
 analysis_2.png
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_2/analysis_2.png)
+
+It shows that the number of businesses in different price range.
 
 ###Analysis Three [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_3.py)
 ************************************************************************************
@@ -153,13 +160,16 @@ The user could enter the date, the day they want to search or enter nothing.
 $ python analysis_3.py 
 $ python analysis_3.py  -d 20161208 -a Friday
 ```
-Code: 
+Code Example: 
+
 Get data from stored data and calculate opening hours:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a4.png)
 
 analysis_3.png
 Show the open time, close time and opening hours in a specific day in one week
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_3/analysis_3.png)
+
+The above plot shows the number of businesses open or close at different time in one day. The below one show that how many businesses will be opened in different opening time length.
 
 ###Analysis Four [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_4.py)
 ************************************************************************************
@@ -172,7 +182,8 @@ The user could enter the date, the category they want to search or enter nothing
 $ python analysis_4.py 
 $ python analysis_4.py  -d 20161208 -l Restaurants Shopping Food Nightlife
 ```
-Code: 
+Code Example:
+
 Get data from stored data and calculate percentage:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a7.png)
 
@@ -182,6 +193,8 @@ Design pie chart :
 analysis_4.png
 Show the percentage of categories with the same price range
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_4/analysis_4.png)
+
+The pie chart shows that the percent of various categories count in whole businesses.
 
 ###Analysis Five [Code](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/analysis_5.py)
 ************************************************************************************
@@ -194,13 +207,16 @@ The user could enter the date, the category they want to search or enter nothing
 $ python analysis_5.py 
 $ python analysis_5.py  -d 20161208 -l Dallas Buffalo Boston Orlando Chicago
 ```
-Code: 
+Code Example:
+
 Get data from stored data and join two dataset:
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/code%20example%20pic/a6.png)
 
 analysis_5.png
 Show the relationship between the income of cities and the number of business the city has
 ![alt tag](https://github.com/jiangyuh/DataAnalysis4Phython/blob/master/FinalProject/output/20161208-17/analysis_5/analysis_5.png)
+
+The above plot shows that the imcome situations in different cities. And the below one shows that total number of businesses in that city. They share the same x-axis.
 
 PS. The default for analysis_N.py is searching all files in their own data folder.
 
